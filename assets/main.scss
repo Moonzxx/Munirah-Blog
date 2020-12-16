@@ -3,3 +3,25 @@
 ---
 
 @import "minima";
+
+
+.blinker { 
+  animation-name: blinker;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1,0,0,1);
+  animation-duration: 1s;
+
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(white,.3);
+}
+
+@keyframes blinker { 
+  from { opacity: 1.0; } to { opacity: 0.0; }
+}
+
